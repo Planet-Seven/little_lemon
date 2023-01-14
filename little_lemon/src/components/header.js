@@ -1,7 +1,7 @@
 function Header() {
     return (
       <>
-        <img src="./amogus" alt="logo"/>
+        <img src="" alt="logo"/>
         <nav className="HeaderNav">
           <ul>
             <li><a href>Home</a></li>
