@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+h1 {
+  color: #F4CE14;
+  font-family: "Markazi Text";
+  font-weight: "medium";
+  font-size: 64px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 80px;
+  line-height: 70%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h2 {
   color: white;
+  font-family: "Markazi Text";
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  color: white;
+  font-family: "Karla";
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  font-family: "Karla";
+  font-size: 18px;
+}
+
+button {
+  background-color: #F4CE14;
+  border-style: none;
+  border-radius: 8px;
+  padding: 15px 30px 15px 30px;
+  margin: 0px 0 40px 0;
+  font-family: "Karla";
+  font-size: 18px;
+}
+
+img {
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+  font-family: 'Karla';
+}
+
+.Hero {
+ background-color: #495E57;
+ padding: 0 10vw 0 10vw
+}
+.Hero>img{
+  display: none;
+}
+
+.Specials {
+  background-image: url('./assets/restaurant chef B.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 10vw 0 10vw;
+  height: 1000px
+}
+.Specials > h1 {
+  color: black
+}
+
+.Reviews {
+  background-color: #495E57;
+  padding: 0 10vw 0 10vw;
+  height: 500px
+}
+
+.About {
+  background-image: url('./assets/restaurant.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 10vw 0 10vw;
+  height: 1000px
+}
+.About > h1 {
+  color :#495E57
+}
+.About > h2 {
+  color: black
+}
+.About > p {
+  color: black
+}
+
+.Footer {
+  background-color: #333333;
+}
+
+.FooterNav > ul > li{
+  color: white;
+  padding:10px
+}
+
+
+@media only screen and (min-width: 1000px){
+
+  .HeaderNav {
+  padding: 0 20vw 0 20vw;
+}
+.HeaderNav ul{
+  display: inline-flex;
+  padding: 0;
+  width: 60vw;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Karla';
+}
+.HeaderNav ul li{
+  list-style:none;
+  padding: 0;
+}
+}
+
+
+@media only screen and (min-width: 800px) {
+
+.Hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+  grid-column-gap: 40px;
+  padding: 0 20vw 0 20vw;
+ }
+.Hero>img{
+  display: block;
+}
+
+.Specials {
+  padding: 0 20vw 0 20vw;
+}
+
+.Reviews {
+  padding: 0 20vw 0 20vw;
+}
+
+.About {
+  padding: 0 20vw 0 20vw;
+}
+
+.Footer {
+  background-color: #333333;
+  padding: 0 20vw 0 20vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: start;
+}
+.FooterNav {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.Socials {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
 }

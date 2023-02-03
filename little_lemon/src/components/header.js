@@ -1,9 +1,11 @@
+import logo from "../assets/Logo.png"
+
 function Header() {
     return (
       <>
-        <img src="" alt="logo"/>
         <nav className="HeaderNav">
-          <ul>
+          <ul id="NavLinks">
+            <li><img src={logo} alt="logo" height="100%"/></li>
             <li><a href>Home</a></li>
             <li><a href>About</a></li>
             <li><a href>Menu</a></li>
@@ -15,5 +17,5 @@ function Header() {
       </>
     );
   }
-  
+
   export default Header;

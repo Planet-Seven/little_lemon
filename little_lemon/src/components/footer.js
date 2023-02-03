@@ -1,6 +1,6 @@
 function Footer() {
     return (
-      <>
+      <div className="Footer">
         <img src="" alt="logo"/>
         <nav className="FooterNav">
           <ul >
@@ -25,8 +25,8 @@ function Footer() {
           </ul>
           <p>Follow us on social media!</p>
         </div>
-      </>
+      </div>
     );
   }
-  
+
   export default Footer;
