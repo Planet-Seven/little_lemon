@@ -11,7 +11,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<Main/>} />
-        <Route path="/booking" element={BookingPage.js} />
+        <Route path="/booking" element={<BookingPage/>} />
       </Routes>
       <Footer/>
     </>
