@@ -1,4 +1,5 @@
 import logo from "../assets/Logo.png"
+import {Link} from 'react-router-dom'
 
 function Header() {
     return (
@@ -6,12 +7,12 @@ function Header() {
         <nav className="HeaderNav">
           <ul id="NavLinks">
             <li><img src={logo} alt="logo" height="100%"/></li>
-            <li><a href>Home</a></li>
-            <li><a href>About</a></li>
-            <li><a href>Menu</a></li>
-            <li><a href>Reservations</a></li>
-            <li><a href>Order online</a></li>
-            <li><a href>Login</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/">About</Link></li>
+            <li><Link to="/">Menu</Link></li>
+            <li><Link to="/booking">Reservations</Link></li>
+            <li><Link to="/">Order online</Link></li>
+            <li><Link to="/">Login</Link></li>
           </ul>
         </nav>
       </>
