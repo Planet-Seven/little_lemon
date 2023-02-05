@@ -1,6 +1,7 @@
 import BookingForm from "./BookingForm"
-import React from "react"
+import React, {fetchAPI, submitAPI} from "react"
 import {useReducer} from "react"
+
 
 function updateTimes(AvailableTimes){
     return AvailableTimes
